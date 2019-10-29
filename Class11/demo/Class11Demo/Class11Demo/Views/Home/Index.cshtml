@@ -1,0 +1,31 @@
+﻿@{ 
+    string name = "Amanda";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to .NET Core</title>
+    <link rel="stylesheet" href="~/styles.css" />
+</head>
+<body>
+    <h1>Hello Class</h1>
+
+    <p>This is super duper!</p>
+
+    <h2> Hello @name </h2>
+
+    <form method="post">
+        <label name="FirstName">First Name</label>
+        <input type="text" name="FirstName" placeholder="Enter First Name" />
+
+        <label name="LastName">Last Name</label>
+        <input type="text" name="LastName" placeholder="Enter Last Name" />
+
+        <label name="age">age</label>
+        <input type="number" name="age" placeholder="Enter your age" />.
+        
+        <button type="submit">SUBMIT!</button>
+    </form>
+</body>
+
+</html>
