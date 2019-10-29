@@ -1,0 +1,13 @@
+﻿@model List<Class11Demo.Models.Student>
+
+
+<h1>Hello</h1>
+
+@* Use C# Code in your .cshtml to show presentation *@
+
+@foreach (var item in Model)
+{
+    <h2>@item.FirstName @item.LastName</h2>
+    <p> is @item.Age years old</p>
+    <hr/>
+}
