@@ -1,0 +1,13 @@
+﻿@model StudentEnrollmentDemoD9.Models.ViewModels.StudentCourseVM
+
+@{
+    ViewData["Title"] = "CourseDetails";
+}
+
+<h1>Students in @Model.Course.CourseCode </h1>
+
+
+@foreach(var i in Model.Enrollments)
+{
+   <p>@i.Student.FirstName @i.Student.LastName</p>
+}
