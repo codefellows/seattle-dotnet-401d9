@@ -1,0 +1,27 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using CMSCohort9.Models
+@inject SignInManager<ApplicationUser> SignInManager
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <p>WELCOME @User.Claims.First(c=> c.Type == "FullName").Value!</p>
+        <form asp-page="/Account/LogOut">
+            <button type="submit">Logout</button>
+        </form>
+    }
+    else
+    {
+        <p> Hello Stranger!</p>
+    }
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
