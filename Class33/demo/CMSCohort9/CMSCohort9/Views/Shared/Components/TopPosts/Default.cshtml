@@ -1,0 +1,11 @@
+﻿@model IEnumerable<CMSCohort9.Models.Post>
+
+
+    <div style="background-color:aqua; color: darkolivegreen; border: 2px solid black">
+       @foreach (var item in Model)
+       {
+           <h2>@item.Title</h2>
+           <p>@item.Content</p>
+           <hr/>
+       }
+    </div>
