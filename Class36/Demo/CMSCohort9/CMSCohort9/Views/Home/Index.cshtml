@@ -1,0 +1,31 @@
+﻿@model CMSCohort9.Models.Email
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_Layout";
+}
+
+<h1>Index</h1>
+
+Welcome Home!
+
+
+@await Component.InvokeAsync("TopPosts", 3)
+
+
+@*<form method="post">
+        <label asp-for="ToEmail"></label>
+        <input asp-for="ToEmail" type="text" />
+
+
+        <label asp-for="Subject"></label>
+        <input asp-for="Subject" type="text" />
+
+        <label asp-for="Message"></label>
+        <input asp-for="Message" type="text" />
+
+
+        <button type="submit">SEND</button>
+
+
+
+    </form>*@
