@@ -1,0 +1,21 @@
+﻿@page
+@model Cohort9Blob.Pages.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+Home, You are.
+
+<form enctype="multipart/form-data" method="post">
+    <label asp-for="Name"> </label>
+    <input asp-for="Name" type="text" />
+    <label asp-for="Image">
+    </label>
+    <input asp-for="Image" type="file" />
+
+    <button type="submit">Upload</button>
+
+</form>
+

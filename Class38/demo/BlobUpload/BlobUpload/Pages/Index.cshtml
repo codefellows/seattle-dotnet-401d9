@@ -1,0 +1,23 @@
+﻿@page
+@model BlobUpload.Pages.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+Welcome Home!
+
+
+<form enctype="multipart/form-data" method="post">
+    <dl>
+        <dt>
+            <label asp-for="Image"></label>
+        </dt>
+        <dd>
+            <input asp-for="Image" type="file">
+            <span asp-validation-for="Image"></span>
+        </dd>
+    </dl>
+    <input asp-page-handler="Upload" class="btn" type="submit" value="Upload" />
+</form>
